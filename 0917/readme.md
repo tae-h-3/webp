@@ -8,3 +8,9 @@
 - `<article>`
 - `<aside>`
 - `<footer>`
+
+## 2. 시맨틱 블록 태그
+
+- `<figure>`
+- `<details>`
+- `<summary>`
