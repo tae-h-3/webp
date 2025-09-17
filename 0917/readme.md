@@ -2,9 +2,9 @@
 
 ## 1. HTML5의 문서 구조와 시맨틱 태그
 
-- '<header>'
-- '<nav>'
-- '<section>'
-- '<article>'
-- '<aside>'
-- '<footer>'
+- `<header>`
+- `<nav>`
+- `<section>`
+- `<article>`
+- `<aside>`
+- `<footer>`
