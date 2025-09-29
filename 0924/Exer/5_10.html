@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>애니메이션</title>
+    <style>
+        p {
+        animation-name: slideLeft;      /* 애니메이션 이름 */
+        animation-duration: 3s;         /* 3초 동안 */
+        animation-iteration-count: 1;   /* 1번만 실행 */
+        animation-fill-mode: forwards;  /* 끝난 후 마지막 상태 유지 */
+    }
+
+    @keyframes slideLeft {
+        from { margin-left: 100%; }
+        to { margin-left: 0%; }
+    }
+    </style>
+</head>
+<body>
+    <h3 id="title">애니메이션 응용</h3>
+    <hr>
+    <div>
+        <p id="hot">질문 있습니다.</p>
+    </div>
+</body>
+</html>
