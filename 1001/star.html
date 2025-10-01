@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>별 만들기</title>
+</head>
+<body>
+    <h3>별 만들기</h3>
+    <hr>
+    <script>
+        let line = prompt("출력할 줄 수를 입력하세요.", "5");
+        if(line == null || line == ""){
+            alert("입력이 취소되었습니다.");
+        }
+        else {
+            line = parseInt(line);
+            for(let i=1; i<=line; i++) {
+                for(let j=1; j<=i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+            document.write("<br>");
+
+            for (let i=1; i<=line; i++) {
+                document.write("&nbsp;&nbsp;".repeat(line - i));
+                document.write("*".repeat(i));
+                document.write("<br>");
+            }    
+            document.write("<br>");
+
+            for (let i=1; i<=line; i++) {
+                document.write("&nbsp;&nbsp;".repeat(line - i));
+                document.write("*".repeat(2*i - 1));
+                document.write("<br>");
+            }
+            document.write("<br>");
+            
+            for (let i=1; i<=line; i++) {
+                document.write("&nbsp;&nbsp;".repeat(line - i));
+                document.write("*".repeat(2*i - 1));
+                document.write("<br>");
+            }
+            for (let i=line; i>1; i--) {
+                document.write("&nbsp;&nbsp;".repeat(line - i + 1));
+                document.write("*".repeat(2*i - 3));
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+</html>
