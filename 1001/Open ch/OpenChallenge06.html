@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>별 문자 출력하기</title>
+</head>
+<body>
+    <h3>별 문자 출력하기</h3>
+    <hr>
+    <script>
+        function printStars(rows) {
+            for(let i=1; i<=rows; i++) {
+                for(let j=0; j<i; j++) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+    <script>
+        let num = prompt("정수를 입력하세요");
+        if (num !== null && !isNaN(num) && Number.isInteger(Number(num)) && Number(num) > 0) {
+            printStars(Number(num));
+        } else {
+            document.write("입력 오류 입니다.");
+        }
+        
+    </script>
+</body>
+</html>
