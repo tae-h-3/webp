@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>innerHTML</title>
+    </head>
+    <body>
+    <h3>innerHTML</h3>
+    <hr>
+    <p onclick="changeText()">이번 여름에는 어디로 여행을 갈까요?</p>
+    <script>
+        function changeText() {
+            let p = document.getElementsByTagName("p")[0];
+            let text = prompt("이번 여름에는 어디로 여행을 갈까요?");
+            p.innerHTML = text;
+        }
+    </script>
+    </body>
+</html>

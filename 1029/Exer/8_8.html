@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>transform:rotate()</title>
+    <script>
+        let n = 0;
+        function trans(obj) {
+            n += 1;
+            if (n == 1) {
+                obj.style.transform = "scale(2,1)";
+            } else if (n == 2) {
+                obj.style.transform = "scale(3,1)";
+            } else if (n == 3) {
+                obj.style.transform = "scale(4,1)";    
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <h3>클릭하면 2,3,4배로 옆으로 늘어납니다.</h3>
+        <hr>
+        <img src="/1029/images/spongebob.png" 
+        width="100" height="100" alt="스폰지밥"
+        onclick="trans(this)">
+    </body>
+</html>
