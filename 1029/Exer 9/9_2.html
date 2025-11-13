@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>라디오 버튼과 이미지 출력</title>
+        <script>
+            function showImage(imgPath) {
+                document.getElementById('imgDisplay').src = imgPath;
+            }
+        </script>
+    </head>    
+    <body>
+        <h3>라디오 버튼을 클릭하면 이미지를 출력합니다.</h3>
+        <hr>
+        <form>
+            <input type="radio" name="fruit" onclick="showImage('/1029/images/바나나.png')">바나나
+            <input type="radio" name="fruit" onclick="showImage('/1029/images/망고.png')">망고
+            <input type="radio" name="fruit" onclick="showImage('/1029/images/사과.png')">사과
+        </form>
+        <img id="imgDisplay" src="" alt="과일 이미지" width="300">
+    </body>
+</html>
